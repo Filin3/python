@@ -1,7 +1,6 @@
 dayList = ["пн", "вт", "ср", "чт", "пт", "сб", "вс"]
-print("Введите день недели от 1 до 7")
 try:
-    day = int(input())-1
+    day = int(input("Введите день недели от 1 до 7: "))-1
 except ValueError:
     print("Вы ввели не число")
     exit()
