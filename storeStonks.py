@@ -1,6 +1,6 @@
 stonks = [200]
 sum710 = 0
-sumM = 0
+sumM = 200
 for i in range(1, 30):
     stonks.append(stonks[i-1] * 2)
     sumM += stonks[i]
