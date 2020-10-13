@@ -6,4 +6,8 @@ def fbb(i):
     else:
         fbbList.append(fbbList[len(fbbList)-2] + fbbList[len(fbbList)-1])
         return fbb(i-1)
-print(fbb(25))
+try:
+    print(fbb(int(input("Введите число фибб: "))))
+except ValueError:
+    print("Введено некорректное значение")
+    exit()
