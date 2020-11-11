@@ -12,6 +12,15 @@ for i in range(len(arr)):
     s += "\n"
 print(s)
 
-for i in range(len(arr)):
-    for j in range(len(arr[i])):
-        print(arr[j][i])
+
+for j in range(len(arr[0])):
+    # s = ""
+    Min = 100
+    Max = 0
+    for i in range(len(arr)):
+        el = arr[i][j]
+        if Min > el: Min = el
+        if Max < el: Max = el
+        # s += str(el) + " "
+    print("Min: {} Max: {}".format(Min, Max))
+    # print(s)
